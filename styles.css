@@ -35,6 +35,7 @@ h2 {
 }
 #perform-sentiment:hover {
     background-color: rgb(19, 33, 165, 0.9);
+    cursor: pointer;
 }
 #sentiment-button {
     align-items: center;
