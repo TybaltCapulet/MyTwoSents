@@ -1,7 +1,3 @@
-function checkSentiment() {
-    let sentimentInputText = document.getElementById("sentiment-input").value;
-    console.log(sentimentInputText);
-}
 
 var performSentimentBtn = document.getElementById("perform-sentiment");
 performSentimentBtn.onclick = function() {
@@ -21,11 +17,9 @@ function fetchSentimentResult() {
         .then((data) => data.result.polarity)
         .then(resultPolarity => {
     console.log(resultPolarity);
-    // let resultPolarity = resultObject.result.polarity;
-
-    let sentimentResultText = document.getElementById("sentiment-result");
-    // let PolarityTextResult = document.getElementById("further-details").innerHTML.value;
     
+    let sentimentResultText = document.getElementById("sentiment-result");
+        
     if (resultPolarity == 0) {
             sentimentResultText.innerHTML = "Your text is neutral in sentiment";
         } else if (resultPolarity > 0 && resultPolarity < 0.5) {
