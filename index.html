@@ -14,14 +14,19 @@
     <div id="main">
         <h1>My Two Sents</h1>
         <h2>Placeholder text to explain what's going on here</h2>
-        <div id="user-input">
-            <input id="sentiment-input" type="text">
-            <button id="perform-sentiment">Perform sentiment analysis</button>
+        <div id="user-input" class="user-input">
+            <textarea id="sentiment-input" type="text"></textarea>
         </div>
+        <div id="sentiment-button">
+            <button id="perform-sentiment">Perform Sentiment Analysis</button>
+        </div>
+        
         <div id=analysis-output>
-            <p id="sentiment-result">Your text is very positive</p>
+            <p class="sentiment-result" id="sentiment-result">Your text is very positive</p>
+            </div>
+        <div>
             <p id="further-details">Your text has a sentiment score of 0.5</p>
-        </div>
+        </div>  
     </div>
 </body>
 </html>
