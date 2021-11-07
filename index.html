@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Two Sents</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Special+Elite" />
 </head>
 
 <body>
@@ -13,20 +14,18 @@
     
     <div id="main">
         <h1>My Two Sents</h1>
-        <h2>Placeholder text to explain what's going on here</h2>
+        <h2>Copy and paste your text below to find out whether it is positive or negative in tone.</h2>
         <div id="user-input" class="user-input">
-            <textarea id="sentiment-input" type="text">This is some really bad Placeholder text</textarea>
+            <textarea id="sentiment-input" type="text" placeholder="Put your text to be analysed here."></textarea>
         </div>
         <div id="sentiment-button">
             <button id="perform-sentiment">Perform Sentiment Analysis</button>
         </div>
         
         <div id=analysis-output>
-            <p class="sentiment-result" id="sentiment-result">Your text is very positive</p>
-            </div>
-        <div>
-            <p id="further-details">Your text has a sentiment score of 0.5</p>
-        </div>  
+            <p class="sentiment-result" id="sentiment-result">Your text is neutral</p>
+        </div>
+        
     </div>
     <script src="main.js"></script>
 </body>

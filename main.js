@@ -22,11 +22,12 @@ function fetchSentimentResult() {
         
     if (resultPolarity == 0) {
             sentimentResultText.innerHTML = "Your text is neutral in sentiment";
+            document.getElementsByClassName
         } else if (resultPolarity > 0 && resultPolarity < 0.5) {
             sentimentResultText.innerHTML = "Your text is moderately positive in sentiment";
         } else if (resultPolarity > 0.5) {
             sentimentResultText.innerHTML = "Your text is very positive in sentiment";
-        } else if (resultPolarity < 0 && resultPolarity > -0.5) {
+        } else if (resultPolarity < 0 && resultPolarity >= -0.5) {
             sentimentResultText.innerHTML = "Your text is moderately negative in sentiment";
         } else if (resultPolarity < -0.5) {
             sentimentResultText.innerHTML = "Your text is very negative in sentiment"
